@@ -1,6 +1,31 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Baloo_2, Roboto, Just_Another_Hand ,  Dela_Gothic_One } from 'next/font/google';
+
+const baloo2 = Baloo_2({
+  subsets: ['latin'],
+  weight: ['400', '700', '800'], // Regular, Bold, ExtraBold
+  variable: '--font-baloo2', // Name for TailwindCSS reference
+});
+
+const delaGothicOne = Dela_Gothic_One({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-dela-gothic-one',
+});
+
+const justAnotherHand = Just_Another_Hand({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-just-another-hand',
+});
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'], // You can add more weights here
+  variable: '--font-roboto',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${justAnotherHand.variable} ${roboto.variable} ${baloo2.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
