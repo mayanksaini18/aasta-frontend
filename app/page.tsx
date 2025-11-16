@@ -13,7 +13,7 @@ const popularFoods: FoodData[] = [
   { name: 'Veggie Pizza', restaurant: 'Pizza Palace', discount: '25%', oldPrice: 400, newPrice: 299, isVeg: true, isSoldOut: false, imagePlaceholder: 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500' },
 ];
 
-const cartItem = { isCart: true, count: 1, imagePlaceholder: 'https://images.unsplash.com/photo-1574672282223-f17de58a1043?w=500' };
+const cartItem: FoodData = { isCart: true, count: 1, imagePlaceholder: 'https://images.unsplash.com/photo-1574672282223-f17de58a1043?w=500' };
 
 const Home: React.FC = () => {
   return (
