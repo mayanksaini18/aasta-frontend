@@ -1,4 +1,4 @@
-// /components/Header.tsx
+"use client "// /components/Header.tsx
 'use client';
 
 import { MapPin, Search, User } from 'lucide-react';
