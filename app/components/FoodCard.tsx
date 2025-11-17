@@ -56,7 +56,7 @@ const Card: React.FC<{ item: FoodItem }> = ({ item }) => {
 };
 
 const CartCard: React.FC<{ item: CartItem }> = ({ item }) => (
-    // Cart Card for the bottom right corner
+    
     <div className="fixed bottom-5 right-5 z-50">
         <button className="relative flex items-center bg-white/70 backdrop-blur-md border border-green-700 text-green-700 font-bold py-2 px-4 rounded-full shadow-xl">
             <span className="absolute -top-1 -left-1 w-5 h-5 bg-red-600 text-xs text-white rounded-full flex items-center justify-center ring-2 ring-white">

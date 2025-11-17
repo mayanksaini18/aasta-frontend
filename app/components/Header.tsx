@@ -1,8 +1,12 @@
 // /components/Header.tsx
-import { MapPin, Search, User } from "lucide-react";
+'use client';
 
+import { MapPin, Search, User } from 'lucide-react';
+import { useState } from 'react';
+import Toggle from './Toggle';
 
 const Header: React.FC = () => {
+  const [isVeg, setIsVeg] = useState(true);
   return (
     <header className="relative pb-32 pt-4 overflow-hidden custom-header-curve bg-[#D9FF63]">
 
@@ -50,9 +54,7 @@ const Header: React.FC = () => {
               <span className="font-bold text-base">VEG </span> <br />
               <span className="font-bold">MODE</span>
             </div>
-            <div className="mt-1 w-10 h-5 bg-white border-2 border-black rounded-lg flex items-center justify-end p-0.5">
-              <div className="w-3.5 h-3.5 bg-green-600 rounded"></div>
-            </div>
+            <Toggle checked={isVeg} onChange={setIsVeg} />
           </div>
         </div>
 
