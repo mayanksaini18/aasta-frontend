@@ -27,9 +27,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-.just-another-hand-regular {
-  font-family: "Just Another Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-

@@ -32,7 +32,7 @@ const Card: React.FC<{ item: FoodItem }> = ({ item }) => {
 
             <div className="p-3 bg-white">
                 <div className="flex justify-between items-start">
-                    <h3 className="text-base font-bold text-gray-800 leading-tight">{name}</h3>
+                    <h3 className="text-base lg:text-lg font-bold text-gray-800 leading-tight">{name}</h3>
                     {/* Veg/Non-Veg Indicator */}
                     <div className={`w-4 h-4 border rounded-sm font-bold ${isVeg ? 'border-green-600' : 'border-red-600'} bg-white flex items-center justify-center flex-shrink-0`}>
                         <div className={`w-2 h-2 rounded-full ${isVeg ? 'bg-green-600' : 'bg-red-600'}`}></div>
@@ -46,7 +46,7 @@ const Card: React.FC<{ item: FoodItem }> = ({ item }) => {
                     <span className="text-sm text-gray-400 line-through">
                         ₹{oldPrice}
                     </span>
-                    <span className="text-xl font-extrabold text-gray-800">
+                    <span className="text-xl lg:text-2xl font-extrabold text-gray-800">
                         ₹{newPrice}
                     </span>
                 </div>

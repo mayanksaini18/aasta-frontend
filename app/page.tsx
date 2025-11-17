@@ -11,26 +11,30 @@ const popularFoods: FoodData[] = [
   
   { name: 'Chocolate Cake', restaurant: 'Sweet Treats', discount: '10%', oldPrice: 500, newPrice: 250, isVeg: true, isSoldOut: true, imagePlaceholder: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500' },
   { name: 'Veggie Pizza', restaurant: 'Pizza Palace', discount: '25%', oldPrice: 400, newPrice: 299, isVeg: true, isSoldOut: false, imagePlaceholder: 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500' },
+  { name: 'Chocolate Cake', restaurant: 'Sweet Treats', discount: '10%', oldPrice: 500, newPrice: 250, isVeg: true, isSoldOut: true, imagePlaceholder: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500' },
+  { name: 'Veggie Pizza', restaurant: 'Pizza Palace', discount: '25%', oldPrice: 400, newPrice: 299, isVeg: true, isSoldOut: false, imagePlaceholder: 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500' },
+  { name: 'Chocolate Cake', restaurant: 'Sweet Treats', discount: '10%', oldPrice: 500, newPrice: 250, isVeg: true, isSoldOut: true, imagePlaceholder: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500' },
+  
 ];
 
 const cartItem: FoodData = { isCart: true, count: 1, imagePlaceholder: 'https://images.unsplash.com/photo-1574672282223-f17de58a1043?w=500' };
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className=" bg-white">
       <Header />
-      {/* This main container is pulled up to overlap the header's curve */}
-      <main className="px-4 sm:px-6 lg:px-8 -mt-24 relative z-10">
+      
+      <main className="-mt-24 relative z-10">
         {/* New container for the popular foods section */}
-        <div className="bg-white rounded-t-2xl shadow-lg p-4 sm:p-6">
-          {/* Popular Foods Section Title with custom red dot */}
-          <h2 className="text-[45px] text-right sm:text-4xl font-extrabold just-another-hand-regular text-gray-800 mb-6 relative">
-            Popular foods
+        <div className="bg-white rounded-t-4xl shadow-lg p-4 sm:p-6">
+         
+          <h2 className="text-3xl text-right sm:text-4xl lg:text-5xl font-extrabold font-just-another-hand text-gray-800 mb-6 relative">
+            Popular foods<span className="absolute top-7.5 -right-4 h-3 w-3 bg-red-500 rounded-full"></span>
            
           </h2>
 
           {/* Food Cards Grid (Responsive 2-column layout) */}
-          <section className="grid grid-cols-2 gap-4 pb-20 md:grid-cols-3 lg:grid-cols-4">
+          <section className="grid grid-cols-2 gap-4 pb-20 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
             {popularFoods.map((food, index) => (
               <FoodCard key={index} food={food} />
             ))}

@@ -27,15 +27,15 @@ const Header: React.FC = () => {
           </button>
 
           {/* Profile */}
-          <div className="w-9 h-9 bg-[#E9FFC2] rounded-full flex items-center justify-center shadow">
-            <User className="w-5 h-5 text-black" />
+          <div className="w-12 h-12 bg-[#E9FFC2] rounded-full flex items-center justify-center shadow">
+            <User className="w-7 h-7 text-black" />
           </div>
         </div>
 
         {/* Search Bar and Veg Mode Toggle */}
-        <div className="flex justify-between items-center mt-3">
+        <div className="flex justify-between items-center mt-3 gap-4">
           {/* Search Bar */}
-          <div className="relative flex-grow">
+          <div className="relative flex-grow max-w-md">
             <input
               type="text"
               placeholder='Search "biryani".'
@@ -45,24 +45,23 @@ const Header: React.FC = () => {
           </div>
 
           {/* VEG MODE + Toggle */}
-          <div className="flex flex-col items-center ml-4">
-            <div className="text-[10px] font-extrabold leading-tight text-black text-center">
-              <span className="font-bold text-sm">VEG </span> <br />
-              <span  className="font-bold ">MODE</span>
+          <div className="flex flex-col items-center">
+            <div className="text-xs font-extrabold leading-tight text-black text-center">
+              <span className="font-bold text-base">VEG </span> <br />
+              <span className="font-bold">MODE</span>
             </div>
-            <div className="mt-1 w-7 h-4 bg-white border border-black rounded-md flex items-center justify-end px-0.5">
-              <div className="w-3 h-3 bg-green-600 rounded-sm"></div>
+            <div className="mt-1 w-10 h-5 bg-white border-2 border-black rounded-lg flex items-center justify-end p-0.5">
+              <div className="w-3.5 h-3.5 bg-green-600 rounded"></div>
             </div>
           </div>
         </div>
 
         {/* Main Banner Text */}
         <h1
-          className="text-center text-[50px] sm:text-[60px]  text-black  just-another-hand-regular leading-snug"
-          style={{ letterSpacing: "-0.5px" }}
+          className="text-center text-[40px] sm:text-5xl lg:text-6xl xl:text-[92px] text-green-950  just-another-hand-regular leading-snug "
         >
           Foodie, it’s your turn to <br />
-          <span>hack the menu.</span>
+          <span className="">hack the menu.</span>
         </h1>
       </div>
     </header>

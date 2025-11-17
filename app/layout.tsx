@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${justAnotherHand.variable} ${roboto.variable} ${baloo2.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${justAnotherHand.variable} ${roboto.variable} ${baloo2.variable} ${delaGothicOne.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
