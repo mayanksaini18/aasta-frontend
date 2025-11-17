@@ -49,13 +49,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* VEG MODE + Toggle */}
-          <div className="flex flex-col items-center">
-            <div className="text-xs font-extrabold leading-tight text-black text-center">
-              <span className="font-bold text-base">VEG </span> <br />
-              <span className="font-bold">MODE</span>
-            </div>
-            <Toggle checked={isVeg} onChange={setIsVeg} />
-          </div>
+          <Toggle checked={isVeg} onChange={setIsVeg} />
         </div>
 
         {/* Main Banner Text */}
