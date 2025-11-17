@@ -19,7 +19,7 @@ const Card: React.FC<{ item: FoodItem }> = ({ item }) => {
                 <img 
                     src={imagePlaceholder}
                     alt={name}
-                    className={` w-xs h-full object-cover rounded-3xl ${isSoldOut ? 'filter grayscale' : ''}`}
+                    className={` w-xs h-full m-auto object-cover rounded-3xl ${isSoldOut ? 'filter grayscale' : ''}`}
                 />
                 
                 {/* SOLD OUT Ribbon */}

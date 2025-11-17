@@ -15,6 +15,7 @@ const config: Config = {
         // This links the CSS variable defined in layout.tsx to a Tailwind class
         baloo2: ['var(--font-baloo2)', 'sans-serif'], 
         roboto: ['var(--font-roboto)', 'sans-serif'],
+        'dela-gothic-one': ['var(--font-dela-gothic-one)', 'cursive'],
         'just-another-hand': ['var(--font-just-another-hand)', 'cursive'],
       },
       // You may also need to extend colors or other styles for the design replication

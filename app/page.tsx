@@ -26,10 +26,10 @@ const Home: React.FC = () => {
       
       <main className="-mt-24 relative z-10">
         {/* New container for the popular foods section */}
-        <div className="bg-white rounded-t-4xl shadow-lg p-4 sm:p-6">
+        <div className="bg-white rounded-t-4xl shadow-lg p-4 pt-10 sm:p-6">
          
           <h2 className="text-3xl text-right sm:text-4xl lg:text-5xl font-extrabold font-just-another-hand text-gray-800 mb-6 relative">
-            Popular foods<span className="absolute top-7.5 -right-4 h-3 w-3 bg-red-500 rounded-full"></span>
+            Popular foods<span className="absolute top-6 -right-3.5 h-3 w-3 bg-red-500 rounded-full"></span>
            
           </h2>
 

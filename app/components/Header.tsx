@@ -4,7 +4,7 @@ import { MapPin, Search, User } from "lucide-react";
 
 const Header: React.FC = () => {
   return (
-    <header className="relative pb-40 pt-10 overflow-hidden custom-header-curve bg-[#D9FF63]">
+    <header className="relative pb-32 pt-4 overflow-hidden custom-header-curve bg-[#D9FF63]">
 
       {/* Pattern Background */}
       <div
@@ -15,7 +15,7 @@ const Header: React.FC = () => {
         }}
       ></div>
 
-      <div className="relative container mx-auto px-4 space-y-6">
+      <div className="relative container mx-auto space-y-4">
 
         {/* Top Row */}
         <div className="flex justify-between items-center">
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
 
         {/* Main Banner Text */}
         <h1
-          className="text-center text-[40px] sm:text-5xl lg:text-6xl xl:text-[92px] text-green-950  just-another-hand-regular leading-snug "
+           className="text-center text-[40px] sm:text-5xl lg:text-6xl xl:text-[92px] text-green-950 font-extrabold font-just-another-hand"
         >
           Foodie, it’s your turn to <br />
           <span className="">hack the menu.</span>
