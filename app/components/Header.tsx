@@ -15,7 +15,7 @@ const Header: React.FC = () => {
         }}
       ></div>
 
-      <div className="relative container mx-auto space-y-4">
+      <div className="relative container mx-auto px-2 space-y-6">
 
         {/* Top Row */}
         <div className="flex justify-between items-center">
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
 
         {/* Main Banner Text */}
         <h1
-           className="text-center text-[40px] sm:text-5xl lg:text-6xl xl:text-[92px] text-green-950 font-extrabold font-just-another-hand"
+           className="text-center text-[40px] sm:text-5xl lg:text-6xl xl:text-[52px] text-green-950 font-extrabold font-just-another-hand"
         >
           Foodie, it’s your turn to <br />
           <span className="">hack the menu.</span>
