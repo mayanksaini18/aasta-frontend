@@ -13,7 +13,7 @@ const Card: React.FC<{ item: FoodItem }> = ({ item }) => {
     const { name, restaurant, discount, oldPrice, newPrice, isVeg, isSoldOut, imagePlaceholder } = item;
     
     return (
-        <div className={`col-span-1 rounded-xl overflow-hidden shadow-lg border relative ${isSoldOut ? 'opacity-60' : ''}`}>
+        <div className={`col-span-1 rounded-xl overflow-hidden  relative ${isSoldOut ? 'opacity-60' : ''}`}>
             
             <div className="relative h-38 sm:h-44 ">
                 <img 
